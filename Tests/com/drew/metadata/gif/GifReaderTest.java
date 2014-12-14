@@ -21,15 +21,19 @@
 
 package com.drew.metadata.gif;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
 import com.drew.lang.StreamReader;
 import com.drew.lang.annotations.NotNull;
 import com.drew.metadata.Metadata;
-import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

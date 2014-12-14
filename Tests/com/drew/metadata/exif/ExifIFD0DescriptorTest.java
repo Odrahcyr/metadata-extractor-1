@@ -21,10 +21,11 @@
 
 package com.drew.metadata.exif;
 
-import com.drew.lang.Rational;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import com.drew.lang.Rational;
 
 /**
  * Unit tests for {@link ExifIFD0Descriptor}.

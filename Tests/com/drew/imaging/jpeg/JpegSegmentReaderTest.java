@@ -20,16 +20,17 @@
  */
 package com.drew.imaging.jpeg;
 
-import com.drew.tools.FileUtil;
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.io.File;
-import java.util.Arrays;
-
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.drew.tools.FileUtil;
+
+import java.io.File;
+import java.util.Arrays;
 
 /**
  * Unit tests for {@link JpegSegmentReader}.

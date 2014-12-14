@@ -20,15 +20,15 @@
  */
 package com.drew.lang;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

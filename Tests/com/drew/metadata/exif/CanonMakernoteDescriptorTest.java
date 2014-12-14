@@ -20,11 +20,12 @@
  */
 package com.drew.metadata.exif;
 
-import com.drew.metadata.exif.makernotes.CanonMakernoteDescriptor;
-import com.drew.metadata.exif.makernotes.CanonMakernoteDirectory;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import com.drew.metadata.exif.makernotes.CanonMakernoteDescriptor;
+import com.drew.metadata.exif.makernotes.CanonMakernoteDirectory;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

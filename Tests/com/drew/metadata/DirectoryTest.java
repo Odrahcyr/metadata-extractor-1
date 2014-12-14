@@ -20,15 +20,21 @@
  */
 package com.drew.metadata;
 
-import com.drew.lang.Rational;
-import com.drew.metadata.exif.ExifIFD0Directory;
-import com.drew.metadata.exif.ExifSubIFDDirectory;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.GregorianCalendar;
+import com.drew.lang.Rational;
+import com.drew.metadata.exif.ExifIFD0Directory;
+import com.drew.metadata.exif.ExifSubIFDDirectory;
 
-import static org.junit.Assert.*;
+import java.util.GregorianCalendar;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

@@ -20,9 +20,9 @@
  */
 package com.drew.metadata.jpeg;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

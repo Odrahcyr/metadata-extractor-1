@@ -21,11 +21,15 @@
 
 package com.drew.metadata.exif;
 
-import com.drew.metadata.exif.makernotes.SonyType1MakernoteDescriptor;
-import com.drew.metadata.exif.makernotes.SonyType1MakernoteDirectory;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import com.drew.metadata.exif.makernotes.SonyType1MakernoteDescriptor;
+import com.drew.metadata.exif.makernotes.SonyType1MakernoteDirectory;
 
 /** @author Drew Noakes https://drewnoakes.com */
 public class SonyType1MakernoteTest

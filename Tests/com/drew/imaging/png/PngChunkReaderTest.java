@@ -1,14 +1,15 @@
 package com.drew.imaging.png;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import com.drew.lang.Iterables;
 import com.drew.lang.StreamReader;
-import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

@@ -20,10 +20,12 @@
  */
 package com.drew.metadata.jpeg;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

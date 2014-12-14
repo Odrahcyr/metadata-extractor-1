@@ -21,16 +21,17 @@
 
 package com.drew.metadata.photoshop;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
 import com.drew.lang.RandomAccessFileReader;
 import com.drew.lang.annotations.NotNull;
 import com.drew.metadata.Metadata;
-import org.junit.Test;
 
 import java.io.File;
 import java.io.RandomAccessFile;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

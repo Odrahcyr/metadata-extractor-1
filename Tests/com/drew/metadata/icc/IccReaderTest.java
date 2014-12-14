@@ -21,13 +21,14 @@
 
 package com.drew.metadata.icc;
 
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
 import com.drew.lang.ByteArrayReader;
 import com.drew.metadata.Metadata;
 import com.drew.testing.TestHelper;
 import com.drew.tools.FileUtil;
-import org.junit.Test;
-
-import static org.junit.Assert.assertNotNull;
 
 public class IccReaderTest
 {

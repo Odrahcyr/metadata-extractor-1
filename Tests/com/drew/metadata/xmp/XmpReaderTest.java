@@ -20,18 +20,25 @@
  */
 package com.drew.metadata.xmp;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+
 import com.drew.imaging.jpeg.JpegSegmentType;
 import com.drew.lang.Rational;
 import com.drew.metadata.Metadata;
 import com.drew.tools.FileUtil;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.*;
-
-import static org.junit.Assert.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Map;
+import java.util.TimeZone;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

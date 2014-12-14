@@ -21,17 +21,18 @@
 
 package com.drew.metadata.bmp;
 
-import com.drew.lang.StreamReader;
-import com.drew.lang.annotations.NotNull;
-import com.drew.metadata.Metadata;
-import org.junit.Test;
-
-import java.io.FileInputStream;
-import java.io.InputStream;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
+import com.drew.lang.StreamReader;
+import com.drew.lang.annotations.NotNull;
+import com.drew.metadata.Metadata;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

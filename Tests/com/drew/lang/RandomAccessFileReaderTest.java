@@ -21,16 +21,16 @@
 
 package com.drew.lang;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
-import static org.junit.Assert.assertTrue;
 
 /** @author Drew Noakes https://drewnoakes.com */
 public class RandomAccessFileReaderTest extends RandomAccessTestBase

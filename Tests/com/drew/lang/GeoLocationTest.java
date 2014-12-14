@@ -21,9 +21,9 @@
 
 package com.drew.lang;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 /**
  * @author  Drew Noakes https://drewnoakes.com

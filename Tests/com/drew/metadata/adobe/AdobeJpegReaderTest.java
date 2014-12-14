@@ -21,17 +21,20 @@
 
 package com.drew.metadata.adobe;
 
+import static com.drew.lang.Iterables.toList;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
 import com.drew.imaging.jpeg.JpegSegmentType;
 import com.drew.lang.SequentialByteArrayReader;
 import com.drew.lang.annotations.NotNull;
 import com.drew.metadata.Metadata;
 import com.drew.tools.FileUtil;
-import org.junit.Test;
 
 import java.io.IOException;
-
-import static com.drew.lang.Iterables.toList;
-import static org.junit.Assert.*;
 
 /** @author Drew Noakes https://drewnoakes.com */
 public class AdobeJpegReaderTest

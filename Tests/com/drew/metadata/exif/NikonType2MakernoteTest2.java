@@ -20,14 +20,15 @@
  */
 package com.drew.metadata.exif;
 
-import com.drew.lang.Rational;
-import com.drew.metadata.Metadata;
-import com.drew.metadata.exif.makernotes.NikonType2MakernoteDirectory;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import com.drew.lang.Rational;
+import com.drew.metadata.Metadata;
+import com.drew.metadata.exif.makernotes.NikonType2MakernoteDirectory;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

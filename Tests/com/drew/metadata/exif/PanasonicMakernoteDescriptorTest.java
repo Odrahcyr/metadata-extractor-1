@@ -21,14 +21,15 @@
 
 package com.drew.metadata.exif;
 
-import com.drew.metadata.Age;
-import com.drew.metadata.Face;
-import com.drew.metadata.exif.makernotes.PanasonicMakernoteDirectory;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import com.drew.metadata.Age;
+import com.drew.metadata.Face;
+import com.drew.metadata.exif.makernotes.PanasonicMakernoteDirectory;
 
 /**
  * @author psandhaus, Drew Noakes

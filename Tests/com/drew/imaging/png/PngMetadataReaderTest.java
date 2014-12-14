@@ -1,18 +1,21 @@
 package com.drew.imaging.png;
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
 import com.drew.lang.KeyValuePair;
 import com.drew.lang.annotations.NotNull;
 import com.drew.metadata.Directory;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.png.PngDirectory;
-import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.TimeZone;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

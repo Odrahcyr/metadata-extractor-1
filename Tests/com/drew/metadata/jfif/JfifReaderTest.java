@@ -21,12 +21,15 @@
 
 package com.drew.metadata.jfif;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
 import com.drew.lang.ByteArrayReader;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.Tag;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Drew Noakes https://drewnoakes.com

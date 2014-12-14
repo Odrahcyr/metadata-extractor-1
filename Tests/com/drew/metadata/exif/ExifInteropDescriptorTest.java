@@ -21,9 +21,9 @@
 
 package com.drew.metadata.exif;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 /**
  * Unit tests for {@link ExifInteropDescriptor}.

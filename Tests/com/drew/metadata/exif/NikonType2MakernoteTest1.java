@@ -20,13 +20,16 @@
  */
 package com.drew.metadata.exif;
 
-import com.drew.metadata.MetadataException;
-import com.drew.metadata.exif.makernotes.NikonType2MakernoteDescriptor;
-import com.drew.metadata.exif.makernotes.NikonType2MakernoteDirectory;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import com.drew.metadata.MetadataException;
+import com.drew.metadata.exif.makernotes.NikonType2MakernoteDescriptor;
+import com.drew.metadata.exif.makernotes.NikonType2MakernoteDirectory;
 
 import java.util.Locale;
 

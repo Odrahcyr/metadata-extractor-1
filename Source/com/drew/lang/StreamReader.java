@@ -111,4 +111,42 @@ public class StreamReader extends SequentialReader
         }
         return skippedTotal;
     }
+    
+    /**
+     * Skips the given bytes or throws an exception if the skip failed. This method will try to skip n-1 first and then it will try to read
+     * the last byte. This way we can check if we skipped past EOF.
+     * 
+     * @param n
+     *            the number of bytes to be skipped
+     * @throws EOFException
+     *             , if the end of the Stream is reached
+     * 
+     * @see FileInputStream#skip(long)
+     * @see <a href=" http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4454092"> JDK-4178064 : java.io.FileInputStream.skip returns
+     *      incorrect result at EOF</a>
+     */
+    public void skipFully(final long n) throws IOException 
+    {
+        if (n <= 0)
+            throw new IllegalArgumentException("n must be greater than zero.");
+        long toSkip = n - 1;
+        while (toSkip > 0) 
+        {
+            long amt = _stream.skip(toSkip);
+            // skip() should never return a negative number. However the according javadoc is a bit vague in this matter and thus not
+            // particularly guarantee that.
+            if (amt <= 0) 
+            {
+                if (_stream.read() == -1)
+                    throw new EOFException("reached end of stream after skipping " + (n - toSkip) + " bytes; " + n + " bytes expected");
+                else
+                    amt = 1;
+            }
+
+            toSkip -= amt;
+        }
+
+        if (_stream.read() == -1) 
+            throw new EOFException("reached end of stream after skipping " + (n - 1) + " bytes; " + n + " bytes expected");
+    }
 }
